@@ -12,4 +12,8 @@ public class Inscription implements Serializable {
     private Integer idInscription;
     private Long numInscription;
     private Integer numSemaine;
+    @ManyToOne
+    private Skieur skieur;
+    @ManyToOne
+    private Cours cours;
 }
